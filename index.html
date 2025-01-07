@@ -226,305 +226,375 @@
 
 
 
-<!--    <section class="section">-->
-<!--      <div class="container">-->
+    <section class="section">
+      <div class="container">
 
-<!--        <div class="columns is-centered">-->
-<!--          <div class="column is-full has-text-centered content">-->
-<!--    <h2 class="title is-3" id="leaderboard_test">Leaderboard on MathVista (test)</h2>-->
-<!--    <div class="content">-->
-<!--      <p class="mt-3">Accuracy scores on the <b>test</b> subset (5,141 examples with <b>private</b> ground truth) of <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>-->
-<!--        <span class="mathvista">MathVista</span>.-->
-<!--      </p>-->
+        <div class="columns is-centered">
+          <div class="column is-full has-text-centered content">
+    <h2 class="title is-3" id="leaderboard_test">Leaderboard on PRMBench</h2>
+    <div class="content">
 
-<!--      <table class="js-sort-table" id="results">-->
-<!--        <tr>-->
-<!--          <td class="js-sort-number"><strong>#</strong></td>-->
-<!--          <td class="js-sort-number"><strong>Model</strong></td>-->
-<!--          <td class="js-sort-number"><strong>Method</strong></td>-->
-<!--          <td class="js-sort-number"><strong>Source</strong></td>-->
-<!--          <td class="js-sort-number"><strong>Date</strong></td>-->
-<!--          <td class="js-sort-number"><strong><u>ALL</u></strong></td>-->
-<!--          <td class="js-sort-number"><strong>FQA</strong></td>-->
-<!--          <td class="js-sort-number"><strong>GPS</strong></td>-->
-<!--          <td class="js-sort-number"><strong>MWP</strong></td>-->
-<!--          <td class="js-sort-number"><strong>TQA</strong></td>-->
-<!--          <td class="js-sort-number"><strong>VQA</strong></td>-->
-<!--          <td class="js-sort-number"><strong>ALG</strong></td>-->
-<!--          <td class="js-sort-number"><strong>ARI</strong></td>-->
-<!--          <td class="js-sort-number"><strong>GEO</strong></td>-->
-<!--          <td class="js-sort-number"><strong>LOG</strong></td>-->
-<!--          <td class="js-sort-number"><strong>NUM</strong></td>-->
-<!--          <td class="js-sort-number"><strong>SCI</strong></td>-->
-<!--          <td class="js-sort-number"><strong>STA</strong></td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>1</td>-->
-<!--          <td><b class="best-score-text">InternVL2-Pro 🥇</b></td>-->
-<!--          <td>LMM 🖼️</td>-->
-<!--          <td><a href="https://github.com/OpenGVLab/InternVL" class="ext-link" style="font-size: 16px;">Link</a></td>-->
-<!--          <td>2024-09-04</td>-->
-<!--          <td><b class="best-score-text">65.84</b></td>-->
-<!--          <td>65.0</td>-->
-<!--          <td>64.0</td>-->
-<!--          <td>75.4</td>-->
-<!--          <td>72.4</td>-->
-<!--          <td>52.3</td>-->
-<!--          <td>67.4</td>-->
-<!--          <td>63.1</td>-->
-<!--          <td>65.0</td>-->
-<!--          <td>30.4</td>-->
-<!--          <td>44.5</td>-->
-<!--          <td>67.0</td>-->
-<!--          <td>72.5</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>2</td>-->
-<!--          <td><b class="best-score-text">InternVL2-8B-MPO 🥈</b></td>-->
-<!--          <td>LMM 🖼️</td>-->
-<!--          <td><a href="https://internvl.github.io/blog/2024-11-14-InternVL-2.0-MPO/" class="ext-link" style="font-size: 16px;">Link</a></td>-->
-<!--          <td>2024-11-14</td>-->
-<!--          <td><b class="best-score-text">65.65</b></td>-->
-<!--          <td>67.4</td> &lt;!&ndash; FQA (figure question answering) &ndash;&gt;-->
-<!--          <td>68.0</td> &lt;!&ndash; GPS (geometry problem solving) &ndash;&gt;-->
-<!--          <td>73.0</td> &lt;!&ndash; MWP (math word problem) &ndash;&gt;-->
-<!--          <td>65.3</td> &lt;!&ndash; TQA (textbook question answering) &ndash;&gt;-->
-<!--          <td>51.5</td> &lt;!&ndash; VQA (visual question answering) &ndash;&gt;-->
-<!--          <td>66.7</td> &lt;!&ndash; ALG (algebraic reasoning) &ndash;&gt;-->
-<!--          <td>60.6</td> &lt;!&ndash; ARI (arithmetic reasoning) &ndash;&gt;-->
-<!--          <td>68.5</td> &lt;!&ndash; GEO (geometry reasoning) &ndash;&gt;-->
-<!--          <td>19.1</td> &lt;!&ndash; LOG (logical reasoning) &ndash;&gt;-->
-<!--          <td>43.1</td> &lt;!&ndash; NUM (numeric commonsense) &ndash;&gt;-->
-<!--          <td>64.9</td> &lt;!&ndash; SCI (scientific reasoning) &ndash;&gt;-->
-<!--          <td>77.1</td> &lt;!&ndash; STA (statistical reasoning) &ndash;&gt;-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--        <td>3</td>-->
-<!--        <td><b class="best-score-text">InternVL-Chat-V1.2-Plus 🥉</b></td>-->
-<!--        <td>LMM 🖼️</td>-->
-<!--        <td><a href="https://arxiv.org/abs/2312.14238" class="ext-link" style="font-size: 16px;">Link</a></td>-->
-<!--        <td>2024-02-22</td>-->
-<!--        <td><b class="best-score-text">60.18</b></td>-->
-<!--        <td>52.2</td>-->
-<!--        <td>56.2</td>-->
-<!--        <td>78.3</td>-->
-<!--        <td>61.6</td>-->
-<!--        <td>55.5</td>-->
-<!--        <td>56.0</td>-->
-<!--        <td>64.4</td>-->
-<!--        <td>57.6</td>-->
-<!--        <td>21.6</td>-->
-<!--        <td>46.1</td>-->
-<!--        <td>60.0</td>-->
-<!--        <td>60.1</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>4</td>-->
-<!--          <td><b class="">InternLM-XComposer2-VL-7B</b></td>-->
-<!--          <td>LMM 🖼️</td>-->
-<!--          <td><a href="https://github.com/InternLM/InternLM-XComposer" class="ext-link" style="font-size: 16px;">Link</a></td>-->
-<!--          <td>2024-01-22</td>-->
-<!--          <td><b class="">57.93</b></td>-->
-<!--          <td>53.9</td>-->
-<!--          <td>56.4</td>-->
-<!--          <td>77.1</td>-->
-<!--          <td>58.4</td>-->
-<!--          <td>43.2</td>-->
-<!--          <td>54.8</td>-->
-<!--          <td>57.6</td>-->
-<!--          <td>58.0</td>-->
-<!--          <td>16.5</td>-->
-<!--          <td>47.6</td>-->
-<!--          <td>59.1</td>-->
-<!--          <td>62.5</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>5</td>-->
-<!--          <td><b class="">Qwen-VL-Plus</b></td>-->
-<!--          <td>LMM 🖼️</td>-->
-<!--          <td><a href="https://github.com/QwenLM/Qwen-VL" class="ext-link" style="font-size: 16px;">Link</a></td>-->
-<!--          <td>2023-12-26</td>-->
-<!--          <td><b class="">44.33</b></td>-->
-<!--          <td>55.9</td>-->
-<!--          <td>34.7</td>-->
-<!--          <td>29.7</td>-->
-<!--          <td>58.8</td>-->
-<!--          <td>42.4</td>-->
-<!--          <td>40.7</td>-->
-<!--          <td>35.4</td>-->
-<!--          <td>36.6</td>-->
-<!--          <td>21.6</td>-->
-<!--          <td>30.4</td>-->
-<!--          <td>55.9</td>-->
-<!--          <td>56.3</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>6</td>-->
-<!--          <td><b class="">SPHINX-MoE</b></td>-->
-<!--          <td>MoE 🤖</td>-->
-<!--          <td><a href="https://github.com/Alpha-VLLM/LLaMA2-Accessory/tree/main/SPHINX" class="ext-link" style="font-size: 16px;">Link</a></td>-->
-<!--          <td>2024-01-13</td>-->
-<!--          <td><b class="">42.68</b></td>-->
-<!--          <td>50.3</td>-->
-<!--          <td>29.7</td>-->
-<!--          <td>40.9</td>-->
-<!--          <td>49.3</td>-->
-<!--          <td>43.3</td>-->
-<!--          <td>33.9</td>-->
-<!--          <td>43.0</td>-->
-<!--          <td>29.1</td>-->
-<!--          <td>14.4</td>-->
-<!--          <td>26.3</td>-->
-<!--          <td>46.9</td>-->
-<!--          <td>51.2</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>7</td>-->
-<!--          <td><b class="">MiniCPM-V-2 (2.8B)</b></td>-->
-<!--          <td>LMM 🖼️</td>-->
-<!--          <td><a href="https://github.com/OpenBMB/MiniCPM-V" class="ext-link" style="font-size: 16px;">Link</a></td>-->
-<!--          <td>2024-04-14</td>-->
-<!--          &lt;!&ndash; "ALL": 39.89,-->
-<!--          "FQA": 51.7,-->
-<!--          "GPS": 27.4,-->
-<!--          "MWP": 39.8,-->
-<!--          "TQA": 42.5,-->
-<!--          "VQA": 34.7,-->
-<!--          "ALG": 31.3,-->
-<!--          "ARI": 34.4,-->
-<!--          "GEO": 30.7,-->
-<!--          "LOG": 13.4,-->
-<!--          "NUM": 33.5,-->
-<!--          "SCI": 38.5,-->
-<!--          "STA": 50.0 &ndash;&gt;-->
-<!--          <td><b class="">39.89</b></td>-->
-<!--          <td>51.7</td>-->
-<!--          <td>27.4</td>-->
-<!--          <td>39.8</td>-->
-<!--          <td>42.5</td>-->
-<!--          <td>34.7</td>-->
-<!--          <td>31.3</td>-->
-<!--          <td>34.4</td>-->
-<!--          <td>30.7</td>-->
-<!--          <td>13.4</td>-->
-<!--          <td>33.5</td>-->
-<!--          <td>38.5</td>-->
-<!--          <td>50.0</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>8</td>-->
-<!--          <td><b class="">PoT GPT-4 (Caption+OCR)</b></td>-->
-<!--          <td>Tool 🛠️</td>-->
-<!--          <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td>-->
-<!--          <td>2023-10-03</td>-->
-<!--          <td><b class="">31.74</b></td>-->
-<!--          <td>27.6</td>-->
-<!--          <td>37.4</td>-->
-<!--          <td>23.9</td>-->
-<!--          <td>43.0</td>-->
-<!--          <td>30.3</td>-->
-<!--          <td>37.1</td>-->
-<!--          <td>27.9</td>-->
-<!--          <td>37.5</td>-->
-<!--          <td>22.7</td>-->
-<!--          <td>15.8</td>-->
-<!--          <td>44.5</td>-->
-<!--          <td>31.9</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>9</td>-->
-<!--          <td><b>CoT GPT4 (Caption+OCR)</b></td>-->
-<!--          <td>Tool 🛠️</td>-->
-<!--          <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td>-->
-<!--          <td>2023-10-03</td>-->
-<!--          <td><b>30.50</b></td>-->
-<!--          <td>27.2</td>-->
-<!--          <td>35.9</td>-->
-<!--          <td>21.3</td>-->
-<!--          <td>43.1</td>-->
-<!--          <td>28.2</td>-->
-<!--          <td>35.7</td>-->
-<!--          <td>25.2</td>-->
-<!--          <td>35.8</td>-->
-<!--          <td>24.7</td>-->
-<!--          <td>15.4</td>-->
-<!--          <td>47.3</td>-->
-<!--          <td>31.3</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>10</td>-->
-<!--          <td><b>LLaVA (LLaMA-2-13B)</b></td>-->
-<!--          <td>LMM 🖼️</td>-->
-<!--          <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td>-->
-<!--          <td>2023-10-03</td>-->
-<!--          <td><b>25.40</b></td>-->
-<!--          <td>22.9</td>-->
-<!--          <td>24.6</td>-->
-<!--          <td>18.1</td>-->
-<!--          <td>35.8</td>-->
-<!--          <td>29.7</td>-->
-<!--          <td>26.9</td>-->
-<!--          <td>22.5</td>-->
-<!--          <td>24.4</td>-->
-<!--          <td>19.1</td>-->
-<!--          <td>19.1</td>-->
-<!--          <td>34.7</td>-->
-<!--          <td>21.6</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>*</td>-->
-<!--          <td><b>Random Chance</b></td>-->
-<!--          <td>-</td>-->
-<!--          <td><a href="https://arxiv.org/abs/2310.02255" class="ext-link" style="font-size: 16px;">Link</a></td>-->
-<!--          <td>2023-10-03</td>-->
-<!--          <td><b>17.86</b></td>-->
-<!--          <td>15.5</td>-->
-<!--          <td>24.1</td>-->
-<!--          <td>4.5</td>-->
-<!--          <td>23.4</td>-->
-<!--          <td>24.3</td>-->
-<!--          <td>25.8</td>-->
-<!--          <td>13.8</td>-->
-<!--          <td>22.7</td>-->
-<!--          <td>13.4</td>-->
-<!--          <td>8.8</td>-->
-<!--          <td>15.8</td>-->
-<!--          <td>14.3</td>-->
-<!--        </tr>-->
-<!--      </table>-->
+      <table class="js-sort-table" id="results">
+        <tr>
+          <td class="js-sort-number"><strong>#</strong></td>
+          <td class="js-sort-number"><strong>Model</strong></td>
+          <td class="js-sort-number"><strong>Class</strong></td>
+          <td class="js-sort-number"><strong>Source</strong></td>
+          <td class="js-sort-number"><strong>Overall</strong></td>
+          <td class="js-sort-number"><strong>NR.</strong></td>
+          <td class="js-sort-number"><strong>NCL.</strong></td>
+          <td class="js-sort-number"><strong>S1</strong></td>
+          <td class="js-sort-number"><strong>ES.</strong></td>
+          <td class="js-sort-number"><strong>SC.</strong></td>
+          <td class="js-sort-number"><strong>DC.</strong></td>
+          <td class="js-sort-number"><strong>CI.</strong></td>
+          <td class="js-sort-number"><strong>S2</strong></td>
+          <td class="js-sort-number"><strong>PS.</strong></td>
+          <td class="js-sort-number"><strong>DR.</strong></td>
+          <td class="js-sort-number"><strong>MS.</strong></td>
+          <td class="js-sort-number"><strong>S3</strong></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><b class="best-score-text">Gemini-2.0-thinking-exp-1219 🥇</b></td>
+          <td>LM-C</td>
+          <td><a href="https://ai.google.dev/gemini-api/docs/thinking-mode" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="best-score-text">68.8</b></td>
+          <td>68.5</td>
+          <td>63.8</td>
+          <td><b class="">66.2</b></td>
+          <td>72.9</td>
+          <td>71.3</td>
+          <td>71.0</td>
+          <td>71.8</td>
+          <td><b class="">71.8</b></td>
+          <td>60.3</td>
+          <td>65.7</td>
+          <td>99.8</td>
+          <td><b class="">75.3</b></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><b class="best-score-text">o1-mini 🥈</b></td>
+          <td>LM-C</td>
+          <td><a href="https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="best-score-text">68.8</b></td>
+          <td>65.6</td>
+          <td>63.7</td>
+          <td><b class="">64.6</b></td>
+          <td>74.5</td>
+          <td>67.7</td>
+          <td>73.8</td>
+          <td>72.3</td>
+          <td><b class="">72.1</b></td>
+          <td>61.8</td>
+          <td>64.8</td>
+          <td>100.0</td>
+          <td><b class="">75.5</b></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><b class="best-score-text">GPT-4o 🥉</b></td>
+          <td>LM-C</td>
+          <td><a href="https://openai.com/index/hello-gpt-4o/" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="best-score-text">66.8</b></td>
+          <td>57.0</td>
+          <td>62.4</td>
+          <td><b class="">59.7</b></td>
+          <td>72.0</td>
+          <td>69.7</td>
+          <td>70.7</td>
+          <td>71.1</td>
+          <td><b class="">70.9</b></td>
+          <td>62.5</td>
+          <td>65.7</td>
+          <td>99.2</td>
+          <td><b class="">75.8</b></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><b class="">Gemini-2.0-flash-exp</b></td>
+          <td>LM-C</td>
+          <td><a href="https://deepmind.google/technologies/gemini/flash/" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">66.0</b></td>
+          <td>67.2</td>
+          <td>58.1</td>
+          <td><b class="">62.7</b></td>
+          <td>70.4</td>
+          <td>65.7</td>
+          <td>66.0</td>
+          <td>67.3</td>
+          <td><b class="">67.3</b></td>
+          <td>61.8</td>
+          <td>66.2</td>
+          <td>98.2</td>
+          <td><b class="">75.4</b></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><b class="">QwQ-Preview-32B</b></td>
+          <td>LM-O</td>
+          <td><a href="https://huggingface.co/Qwen/QwQ-32B-Preview" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">63.6</b></td>
+          <td>57.2</td>
+          <td>55.6</td>
+          <td><b class="">56.4</b></td>
+          <td>67.4</td>
+          <td>72.3</td>
+          <td>66.2</td>
+          <td>66.9</td>
+          <td><b class="">68.2</b></td>
+          <td>57.8</td>
+          <td>62.7</td>
+          <td>100.0</td>
+          <td><b class="">73.5</b></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><b class="">ReasonEval-34B</b></td>
+          <td>PRM</td>
+          <td><a href="https://huggingface.co/GAIR/ReasonEval-34B" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">60.5</b></td>
+          <td>54.8</td>
+          <td>48.1</td>
+          <td><b class="">51.5</b></td>
+          <td>66.4</td>
+          <td>60.3</td>
+          <td>57.8</td>
+          <td>67.5</td>
+          <td><b class="">63.0</b></td>
+          <td>57.7</td>
+          <td>64.3</td>
+          <td>97.2</td>
+          <td><b class="">73.1</b></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><b class="">ReasonEval-7B</b></td>
+          <td>PRM</td>
+          <td><a href="https://huggingface.co/GAIR/ReasonEval-7B" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">60.0</b></td>
+          <td>61.0</td>
+          <td>50.1</td>
+          <td><b class="">55.6</b></td>
+          <td>62.1</td>
+          <td>65.9</td>
+          <td>61.5</td>
+          <td>65.9</td>
+          <td><b class="">63.8</b></td>
+          <td>55.6</td>
+          <td>57.9</td>
+          <td>99.5</td>
+          <td><b class="">71.0</b></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><b class="">RLHFlow-PRM-Mistral-8B</b></td>
+          <td>PRM</td>
+          <td><a href="https://huggingface.co/RLHFlow/Llama3.1-8B-PRM-Mistral-Data" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">54.4</b></td>
+          <td>46.1</td>
+          <td>47.3</td>
+          <td><b class="">46.7</b></td>
+          <td>56.6</td>
+          <td>55.1</td>
+          <td>54.4</td>
+          <td>63.8</td>
+          <td><b class="">57.5</b></td>
+          <td>51.5</td>
+          <td>56.2</td>
+          <td>97.9</td>
+          <td><b class="">68.5</b></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td><b class="">RLHFlow-PRM-Deepseek-8B</b></td>
+          <td>PRM</td>
+          <td><a href="https://huggingface.co/RLHFlow/Llama3.1-8B-PRM-Deepseek-Data" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">54.2</b></td>
+          <td>46.4</td>
+          <td>48.9</td>
+          <td><b class="">47.6</b></td>
+          <td>55.7</td>
+          <td>55.0</td>
+          <td>53.2</td>
+          <td>66.2</td>
+          <td><b class="">57.5</b></td>
+          <td>49.0</td>
+          <td>55.4</td>
+          <td>99.8</td>
+          <td><b class="">68.1</b></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><b class="">MATHMinos-Mistral-7B</b></td>
+          <td>PRM</td>
+          <td><a href="https://github.com/KbsdJames/MATH-Minos" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">54.2</b></td>
+          <td>48.8</td>
+          <td>54.0</td>
+          <td><b class="">51.4</b></td>
+          <td>57.0</td>
+          <td>52.1</td>
+          <td>50.7</td>
+          <td>57.8</td>
+          <td><b class="">54.4</b></td>
+          <td>52.8</td>
+          <td>55.8</td>
+          <td>91.1</td>
+          <td><b class="">66.5</b></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td><b class="">Llemma-PRM800k-7B</b></td>
+          <td>PRM</td>
+          <td><a href="https://huggingface.co/ScalableMath/llemma-7b-prm-prm800k-level-1to3-hf" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">52.0</b></td>
+          <td>49.3</td>
+          <td>53.4</td>
+          <td><b class="">51.4</b></td>
+          <td>56.4</td>
+          <td>47.1</td>
+          <td>46.7</td>
+          <td>53.3</td>
+          <td><b class="">50.9</b></td>
+          <td>51.0</td>
+          <td>53.5</td>
+          <td>93.6</td>
+          <td><b class="">66.0</b></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td><b class="">Llemma-MetaMath-7B</b></td>
+          <td>PRM</td>
+          <td><a href="https://huggingface.co/ScalableMath/llemma-7b-prm-metamath-level-1to3-hf" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">50.5</b></td>
+          <td>50.2</td>
+          <td>50.5</td>
+          <td><b class="">50.3</b></td>
+          <td>51.9</td>
+          <td>47.6</td>
+          <td>44.4</td>
+          <td>52.1</td>
+          <td><b class="">49.0</b></td>
+          <td>50.5</td>
+          <td>51.3</td>
+          <td>96.0</td>
+          <td><b class="">66.0</b></td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td><b class="">Llemma-oprm-7B</b></td>
+          <td>PRM</td>
+          <td><a href="https://huggingface.co/ScalableMath/llemma-7b-oprm-prm800k-level-1to3-hf" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">50.3</b></td>
+          <td>48.7</td>
+          <td>49.3</td>
+          <td><b class="">49.0</b></td>
+          <td>54.2</td>
+          <td>46.8</td>
+          <td>44.5</td>
+          <td>53.5</td>
+          <td><b class="">49.8</b></td>
+          <td>49.2</td>
+          <td>51.3</td>
+          <td>91.8</td>
+          <td><b class="">64.1</b></td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td><b class="">MathShepherd-Mistral-7B</b></td>
+          <td>PRM</td>
+          <td><a href="https://huggingface.co/peiyi9979/math-shepherd-mistral-7b-prm" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">47.0</b></td>
+          <td>44.0</td>
+          <td>50.3</td>
+          <td><b class="">47.1</b></td>
+          <td>49.4</td>
+          <td>44.5</td>
+          <td>41.3</td>
+          <td>47.7</td>
+          <td><b class="">45.7</b></td>
+          <td>47.2</td>
+          <td>48.6</td>
+          <td>86.1</td>
+          <td><b class="">60.7</b></td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td><b class="">Skywork-PRM-7B</b></td>
+          <td>PRM</td>
+          <td><a href="https://huggingface.co/Skywork/Skywork-o1-Open-PRM-Qwen-2.5-7B" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">36.2</b></td>
+          <td>35.7</td>
+          <td>41.2</td>
+          <td><b class="">38.4</b></td>
+          <td>36.7</td>
+          <td>29.1</td>
+          <td>30.6</td>
+          <td>34.4</td>
+          <td><b class="">32.7</b></td>
+          <td>36.8</td>
+          <td>37.4</td>
+          <td>88.8</td>
+          <td><b class="">54.3</b></td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td><b class="">Skywork-PRM-1.5B</b></td>
+          <td>PRM</td>
+          <td><a href="https://huggingface.co/Skywork/Skywork-o1-Open-PRM-Qwen-2.5-1.5B" class="ext-link" target="_blank">Link</a></td>
+          <td><b class="">31.7</b></td>
+          <td>31.4</td>
+          <td>35.8</td>
+          <td><b class="">33.6</b></td>
+          <td>32.4</td>
+          <td>25.7</td>
+          <td>26.0</td>
+          <td>30.2</td>
+          <td><b class="">28.6</b></td>
+          <td>33.1</td>
+          <td>32.3</td>
+          <td>81.1</td>
+          <td><b class="">48.8</b></td>
+        </tr>
+      </table>
 
-<!--      <b>Human Performance*:</b> Average human performance from AMT annotators who have high school diplomas or above.-->
-<!--      <br>-->
-<!--      <b>Method types:</b> <b>MoE 🤖:</b> Mixture of Experts, <b>LMM 🖼️:</b> Large Multimodal Model, <b>Tool 🛠️:</b> Tool-augmented Large Language Model.-->
-<!--      <br>-->
-<!--      <b>Task types:</b> <b>FQA:</b> figure QA,-->
-<!--      <b>GPS:</b> geometry problem solving,-->
-<!--      <b>MWP:</b> math word problem,-->
-<!--      <b>TQA:</b> textbook QA,-->
-<!--      <b>VQA:</b> visual QA.-->
-<!--      <br>-->
-<!--      <b>Math reasoning types:</b>-->
-<!--      <b>ALG:</b> algebraic,-->
-<!--      <b>ARI:</b> arithmetic,-->
-<!--      <b>GEO:</b> geometry,-->
-<!--      <b>LOG:</b> logical ,-->
-<!--      <b>NUM:</b> numeric,-->
-<!--      <b>SCI:</b> scientific,-->
-<!--      <b>STA:</b> statistical.-->
-<!--      <br>-->
-<!--      <br>-->
-<!--      <div>-->
-<!--        <p>🚨 To submit your results to the leaderboard, please send to <a href="mailto:lupantech@gmail.com">this email</a> with your result json files.</p>-->
-<!--        <p>🚨 For more submission details, please refer to <a href="https://github.com/lupantech/MathVista?tab=readme-ov-file#-leaderboard-">this link</a> and <a href="https://github.com/lupantech/MathVista?tab=readme-ov-file#-evaluations-on-mathvista">this link</a>.-->
-<!--        </p>-->
-<!--      </div>-->
-<!--    </div>-->
 
-<!--  </div>-->
-<!--  </div>-->
 
-<!--  </div>-->
-<!--</section>-->
+
+
+
+
+
+
+
+
+
+      <b>Model Classes:</b> <b>PRM:</b> Process-Level Reward Models, <b>LM-C:</b> Close-Source Large Language Models, <b>LM-O:</b> Open-Source Large Language Models.
+      <br>
+      <b>Task types:</b> <b>NR:</b> Non-Redundancy,
+      <b>NCL:</b> Non-Circular Logic,
+      <b>ES:</b> Empirically Soundness,
+      <b>SC:</b> Step Consistency,
+      <b>DC:</b> Domain Consistency.
+      <b>CI:</b> Confidence Invariance.
+      <b>PS:</b> Prerequisite Sensitivity.
+      <b>DR:</b> Deception Resistance.
+      <b>MS:</b> Multi-Solution Consistency.
+      <br>
+      <b>Evaluation Subjects:</b>
+      <b>S1:</b> Average PRMScore for Simplicity evaluation subjects, including NR. and NCL.<br>
+      <b>S2:</b> Average PRMScore for Soundness evaluation subjects, including ES., SC., DC., and CI.<br>
+      <b>S3:</b> Average PRMScore for Sensitivity evaluation subjects, including PS., DR., and MS. <br>
+      <br>
+    </div>
+
+  </div>
+  </div>
+
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
