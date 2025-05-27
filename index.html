@@ -6,7 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models</title>
+  <title>From Head to Tail: Towards Balanced Representation in Large Vision-Language Models through Adaptive Data Calibration</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -34,7 +34,7 @@
 <!--        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">-->
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="stylesheet" href="./static/css/leaderboard.css">
-  <link rel="icon" href="./static/images/reward2.png">
+  <link rel="icon" href="./static/images/reward3.png">
 
   <script type="text/javascript" src="static/js/sort-table.js" defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -74,6 +74,12 @@
           <a class="navbar-item" href="https://github.com/ssmisya/MHR">
             MHR
           </a>
+          <a class="navbar-item" href="https://prmbench.github.io/">
+            PRMBench
+          </a>
+          <a class="navbar-item" href="https://github.com/zhaochen0110/OpenThinkIMG">
+            OpenThinkImG
+          </a>
         </div>
       </div>
     </div>
@@ -87,36 +93,37 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models</h1>
+          <h1 class="title is-1 publication-title">From Head to Tail: Towards Balanced Representation in Large Vision-Language Models through Adaptive Data Calibration</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://github.com/ssmisya">Mingyang Song</a><sup>1,3</sup>,</span>
+              <a href="https://github.com/ssmisya">Mingyang Song</a><sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://zhaochen0110.github.io/">Zhaochen Su</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=rT3hqdcAAAAJ&hl=zh-CN">Xiaoye Qu</a><sup>3</sup>,
+              <a href="https://scholar.google.com/citations?user=rT3hqdcAAAAJ&hl=zh-CN">Xiaoye Qu</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://sites.harvard.edu/jzhou/">Jiawei Zhou</a><sup>4</sup>,
+              <a href="https://sites.harvard.edu/jzhou/">Jiawei Zhou</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://ych133.github.io/">Yu Cheng</a><sup>5</sup>,
+              <a href="https://ych133.github.io/">Yu Cheng</a><sup>4</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Fudan University,</span>
-            <span class="author-block"><sup>2</sup>Soochow University,</span>
-            <span class="author-block"><sup>3</sup>Shanghai AI Laboratory,</span>
-            <span class="author-block"><sup>4</sup>Stony Brook University,</span>
-            <span class="author-block"><sup>5</sup>The Chinese University of Hong Kong</span>
+            <span class="author-block"><sup>2</sup>Shanghai AI Laboratory,</span>
+            <span class="author-block"><sup>3</sup>Stony Brook University,</span>
+            <span class="author-block"><sup>4</sup>The Chinese University of Hong Kong</span>
           </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="color: red;">CVPR 2025</span>
+          </div>
+
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2501.03124"
+                <a href="https://arxiv.org/pdf/2503.12821"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -125,7 +132,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2501.03124"
+                <a href="https://arxiv.org/abs/2503.12821"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -136,7 +143,7 @@
 
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/ssmisya/PRMBench"
+                <a href="https://github.com/ssmisya/robustLMM"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -144,27 +151,7 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://huggingface.co/datasets/hitsmy/PRMBench_Preview"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
-                         alt="Hugging Face" style="height: 1em; vertical-align: middle;">
-                  </span>
-                  <span>Dataset</span>
-                </a>
-              </span>
-              <!-- Document Link. -->
-              <span class="link-block">
-              <a href="https://github.com/ssmisya/PRMBench/blob/main/docs/document.md"
-                 class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fas fa-file-alt"></i> <!-- 替换为文档图标 -->
-                </span>
-                <span>Documentation</span>
-              </a>
-            </span>
+
             </div>
 
           </div>
@@ -178,16 +165,20 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <figure class="image is-fullwidth">
-        <img src="./static/images/main_fig.svg" alt="Teaser Image">
+        <img src="./static/images/main_fig.jpg" alt="Teaser Image">
       </figure>
       <h2 class="subtitle has-text-centered">
+        The overview of our <span class="dnerf"><strong>Adaptive Data Refinement Framework (ADR)</strong></span>.<br>
+        <strong>(a)</strong> In the Analyzing Stage, we first extract<span style="color: blue;"> <em>tokens, objects, co-occurrences, and interrogations</em></span> from the training instances, then construct corresponding distribution using a reverse-indexed mapping.<br>
+        <strong>(b)</strong>  In the Data Rebalancing stage, we analyze the optimizing direction and adaptively rebalance the redundant data based on the entity distribution identified in the Analyzing stage.<br>
+        <strong>(c)</strong>  Finally, in the Data Synthesis stage, we utilize <span style="color: blue;">DDPM</span> and the latent representations of scarce image instances to synthesize the underrepresented data.<br>
 
-          An overview of our <span class="dnerf"><strong>PRMBench</strong></span>. The left part illustrates our data curation procedure. In the right part of the figure, we showcase demonstrations of our evaluation subjects and the relative performance of tested models, with
-          <span style="background-color: rgb(201, 229, 221); padding: 0.1em;">green</span>,
-          <span style="background-color: rgb(255, 243, 213); padding: 0.1em;">yellow</span>, and
-          <span style="background-color: rgb(211, 209, 209); padding: 0.1em;">gray</span> boxes indicating <em>simplicity</em>, <em>soundness</em>, and <em>sensitivity</em> respectively, where
-          <span style="background-color: rgb(224, 146, 124); padding: 0.1em;">red</span> circles represent erroneous steps and
-          <span style="background-color: rgb(126, 176, 149); padding: 0.1em;">green</span> circles indicate correct regular steps.
+<!--          An overview of our <span class="dnerf"><strong>PRMBench</strong>. The left part illustrates our data curation procedure. In the right part of the figure, we showcase demonstrations of our evaluation subjects and the relative performance of tested models, with-->
+<!--          <span style="background-color: rgb(201, 229, 221); padding: 0.1em;">green</span>,-->
+<!--          <span style="background-color: rgb(255, 243, 213); padding: 0.1em;">yellow</span>, and-->
+<!--          <span style="background-color: rgb(211, 209, 209); padding: 0.1em;">gray</span> boxes indicating <em>simplicity</em>, <em>soundness</em>, and <em>sensitivity</em> respectively, where-->
+<!--          <span style="background-color: rgb(224, 146, 124); padding: 0.1em;">red</span> circles represent erroneous steps and-->
+<!--          <span style="background-color: rgb(126, 176, 149); padding: 0.1em;">green</span> circles indicate correct regular steps.-->
 
       </h2>
     </div>
@@ -205,18 +196,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Process-level Reward Models (PRMs) are crucial for complex reasoning and decision-making tasks,
-            where each intermediate step plays an important role in the reasoning process.
-            Since language models are prone to various types of errors during the reasoning process,
-            PRMs are required to possess nuanced capabilities for detecting various implicit error types in real-world scenarios.
-            However, current benchmarks primarily focus on step correctness, failing to evaluate PRMs' performance systematically.
-            To address this gap, we introduce <span class="dnerf">PRMBench</span>, a process-level benchmark specifically designed to assess the fine-grained error detection capabilities of PRMs.
-            <span class="dnerf">PRMBench</span> comprises 6,216 carefully designed problems and 83,456 step-level labels, evaluating models across multiple dimensions,
-            including simplicity, soundness, and sensitivity. In our experiments on 15 models,
-            spanning both open-source PRMs and closed-source large language models prompted as critic models,
-            we uncover significant weaknesses in current PRMs. These findings underscore the challenges inherent in
-            process-level evaluation and highlight key directions for future research. We hope <span class="dnerf">PRMBench</span> can be a robust bench for advancing
-            research on PRM evaluation and development.
+            Large Vision-Language Models (LVLMs) have achieved significant progress in combining visual comprehension with language generation. Despite this success, the training data of LVLMs still suffers from Long-Tail (LT) problems, where the data distribution is highly imbalanced.
+            Previous works have mainly focused on traditional VLM architectures, i.e., CLIP or ViT, and specific tasks such as recognition and classification. Nevertheless, the exploration of LVLMs (e.g., LLaVA) and more general tasks (e.g., Visual Question Answering and Visual Reasoning) remains under-explored.
+            In this paper, we first conduct an in-depth analysis of the LT issues in LVLMs and identify two core causes: the overrepresentation of head concepts and the underrepresentation of tail concepts.
+            Based on the above observation, we propose an <span class="dnerf">Adaptive Data Refinement Framework (ADR)</span>, which consists of two stages: <span class="dnerf">Data Rebalancing (DR)</span> and <span class="dnerf">Data Synthesis (DS)</span>.
+            In the DR stage, we adaptively rebalance the redundant data based on entity distributions, while in the DS stage, we leverage Denoising Diffusion Probabilistic Models (DDPMs) and scarce images to supplement underrepresented portions.
+            Through comprehensive evaluations across eleven benchmarks, our proposed ADR effectively mitigates the long-tail problem in the training data, improving the average performance of LLaVA 1.5 relatively by <span style="color: red;">4.36%</span>, without increasing the training data volume.
           </p>
 
         </div>
@@ -226,583 +211,55 @@
 
 
 
-    <section class="section">
-      <div class="container">
+<!--    <section class="section">-->
+<!--      <div class="container">-->
 
-        <div class="columns is-centered">
-          <div class="column is-full has-text-centered content">
-    <h2 class="title is-3" id="leaderboard_test">Leaderboard on PRMBench</h2>
-    <div class="content">
+<!--        <div class="columns is-centered">-->
+<!--          <div class="column is-full has-text-centered content">-->
 
 
+<!--  </div>-->
+<!--  </div>-->
 
-
-      <table class="js-sort-table" id="results">
-        <tr>
-          <td class="js-sort-number"><strong>#</strong></td>
-          <td class="js-sort-number"><strong>Model</strong></td>
-          <td class="js-sort-number"><strong>Class</strong></td>
-          <td class="js-sort-number"><strong>Source</strong></td>
-          <td class="js-sort-number"><strong>Overall</strong></td>
-          <td class="js-sort-number"><strong>NR.</strong></td>
-          <td class="js-sort-number"><strong>NCL.</strong></td>
-          <td class="js-sort-number"><strong>S1</strong></td>
-          <td class="js-sort-number"><strong>ES.</strong></td>
-          <td class="js-sort-number"><strong>SC.</strong></td>
-          <td class="js-sort-number"><strong>DC.</strong></td>
-          <td class="js-sort-number"><strong>CI.</strong></td>
-          <td class="js-sort-number"><strong>S2</strong></td>
-          <td class="js-sort-number"><strong>PS.</strong></td>
-          <td class="js-sort-number"><strong>DR.</strong></td>
-          <td class="js-sort-number"><strong>MS.</strong></td>
-          <td class="js-sort-number"><strong>S3</strong></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td><b class="best-score-text">Gemini-2.0-thinking-exp-1219 🥇</b></td>
-          <td>LM-C</td>
-          <td><a href="https://ai.google.dev/gemini-api/docs/thinking-mode" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="best-score-text">68.8</b></td>
-          <td>68.5</td>
-          <td>63.8</td>
-          <td><b class="">66.2</b></td>
-          <td>72.9</td>
-          <td>71.3</td>
-          <td>71.0</td>
-          <td>71.8</td>
-          <td><b class="">71.8</b></td>
-          <td>60.3</td>
-          <td>65.7</td>
-          <td>99.8</td>
-          <td><b class="">75.3</b></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td><b class="best-score-text">o1-mini 🥈</b></td>
-          <td>LM-C</td>
-          <td><a href="https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="best-score-text">68.8</b></td>
-          <td>65.6</td>
-          <td>63.7</td>
-          <td><b class="">64.6</b></td>
-          <td>74.5</td>
-          <td>67.7</td>
-          <td>73.8</td>
-          <td>72.3</td>
-          <td><b class="">72.1</b></td>
-          <td>61.8</td>
-          <td>64.8</td>
-          <td>100.0</td>
-          <td><b class="">75.5</b></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td><b class="best-score-text">Qwen2.5-Math-PRM-72B 🥉</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/Qwen/Qwen2.5-Math-PRM-72B" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="best-score-text">68.2</b></td>
-          <td>50.4</td>
-          <td>58.8</td>
-          <td><b class="">54.6</b></td>
-          <td>73.7</td>
-          <td>71.1</td>
-          <td>72.2</td>
-          <td>78.6</td>
-          <td><b class="">73.9</b></td>
-          <td>60.3</td>
-          <td>71.2</td>
-          <td>99.4</td>
-          <td><b class="">77.0</b></td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td><b class="">GPT-4o</b></td>
-          <td>LM-C</td>
-          <td><a href="https://openai.com/index/hello-gpt-4o/" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">66.8</b></td>
-          <td>57.0</td>
-          <td>62.4</td>
-          <td><b class="">59.7</b></td>
-          <td>72.0</td>
-          <td>69.7</td>
-          <td>70.7</td>
-          <td>71.1</td>
-          <td><b class="">70.9</b></td>
-          <td>62.5</td>
-          <td>65.7</td>
-          <td>99.2</td>
-          <td><b class="">75.8</b></td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td><b class="">Gemini-2.0-flash-exp</b></td>
-          <td>LM-C</td>
-          <td><a href="https://deepmind.google/technologies/gemini/flash/" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">66.0</b></td>
-          <td>67.2</td>
-          <td>58.1</td>
-          <td><b class="">62.7</b></td>
-          <td>70.4</td>
-          <td>65.7</td>
-          <td>66.0</td>
-          <td>67.3</td>
-          <td><b class="">67.3</b></td>
-          <td>61.8</td>
-          <td>66.2</td>
-          <td>98.2</td>
-          <td><b class="">75.4</b></td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td><b class="">Qwen2.5-Math-PRM-7B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/Qwen/Qwen2.5-Math-PRM-7B" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">65.5</b></td>
-          <td>49.0</td>
-          <td>55.1</td>
-          <td><b class="">52.1</b></td>
-          <td>71.8</td>
-          <td>67.3</td>
-          <td>66.3</td>
-          <td>78.5</td>
-          <td><b class="">71.0</b></td>
-          <td>57.6</td>
-          <td>69.1</td>
-          <td>99.7</td>
-          <td><b class="">75.5</b></td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td><b class="">Pure-PRM-7B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/jinachris/Qwen2.5-Math-7B-PRM800K" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">65.3</b></td>
-          <td>49.2</td>
-          <td>55.2</td>
-          <td><b class="">52.2</b></td>
-          <td>71.1</td>
-          <td>68.8</td>
-          <td>64.0</td>
-          <td>76.9</td>
-          <td><b class="">70.2</b></td>
-          <td>60.3</td>
-          <td>69.2</td>
-          <td>98.0</td>
-          <td><b class="">75.8</b></td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td><b class="">Skywork-PRM-7B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/Skywork/Skywork-o1-Open-PRM-Qwen-2.5-7B" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">65.1</b></td>
-          <td>56.4</td>
-          <td>62.8</td>
-          <td><b class="">59.6</b></td>
-          <td>69.4</td>
-          <td>67.1</td>
-          <td>67.7</td>
-          <td>69.9</td>
-          <td><b class="">68.5</b></td>
-          <td>60.9</td>
-          <td>65.8</td>
-          <td>93.2</td>
-          <td><b class="">73.3</b></td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td><b class="">QwQ-Preview-32B</b></td>
-          <td>LM-O</td>
-          <td><a href="https://huggingface.co/Qwen/QwQ-32B-Preview" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">63.6</b></td>
-          <td>57.2</td>
-          <td>55.6</td>
-          <td><b class="">56.4</b></td>
-          <td>67.4</td>
-          <td>72.3</td>
-          <td>66.2</td>
-          <td>66.9</td>
-          <td><b class="">68.2</b></td>
-          <td>57.8</td>
-          <td>62.7</td>
-          <td>100.0</td>
-          <td><b class="">73.5</b></td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td><b class="">Skywork-PRM-1.5B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/Skywork/Skywork-o1-Open-PRM-Qwen-2.5-1.5B" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">61.1</b></td>
-          <td>52.0</td>
-          <td>56.4</td>
-          <td><b class="">54.2</b></td>
-          <td>64.8</td>
-          <td>64.9</td>
-          <td>63.3</td>
-          <td>66.5</td>
-          <td><b class="">64.9</b></td>
-          <td>57.5</td>
-          <td>63.3</td>
-          <td>91.1</td>
-          <td><b class="">70.7</b></td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td><b class="">ReasonEval-34B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/GAIR/ReasonEval-34B" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">60.5</b></td>
-          <td>54.8</td>
-          <td>48.1</td>
-          <td><b class="">51.5</b></td>
-          <td>66.4</td>
-          <td>60.3</td>
-          <td>57.8</td>
-          <td>67.5</td>
-          <td><b class="">63.0</b></td>
-          <td>57.7</td>
-          <td>64.3</td>
-          <td>97.2</td>
-          <td><b class="">73.1</b></td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td><b class="">R1-Distill-Qwen-32B</b></td>
-          <td>LM-O</td>
-          <td><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">60.2</b></td>
-          <td>57.2</td>
-          <td>51.9</td>
-          <td><b class="">54.5</b></td>
-          <td>66.1</td>
-          <td>68.4</td>
-          <td>69.3</td>
-          <td>64.8</td>
-          <td><b class="">67.2</b></td>
-          <td>53.3</td>
-          <td>54.6</td>
-          <td>99.9</td>
-          <td><b class="">69.3</b></td>
-        </tr>
-        <tr>
-          <td>13</td>
-          <td><b class="">ReasonEval-7B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/GAIR/ReasonEval-7B" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">60.1</b></td>
-          <td>61.0</td>
-          <td>50.1</td>
-          <td><b class="">55.6</b></td>
-          <td>62.1</td>
-          <td>65.9</td>
-          <td>61.5</td>
-          <td>66.0</td>
-          <td><b class="">63.9</b></td>
-          <td>55.7</td>
-          <td>58.0</td>
-          <td>99.5</td>
-          <td><b class="">71.1</b></td>
-        </tr>
-        <tr>
-          <td>14</td>
-          <td><b class="">R1-Distill-Llama3.1-70B</b></td>
-          <td>LM-O</td>
-          <td><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">57.5</b></td>
-          <td>49.5</td>
-          <td>48.1</td>
-          <td><b class="">48.8</b></td>
-          <td>61.4</td>
-          <td>65.5</td>
-          <td>65.8</td>
-          <td>61.1</td>
-          <td><b class="">63.4</b></td>
-          <td>48.8</td>
-          <td>54.1</td>
-          <td>100.0</td>
-          <td><b class="">67.6</b></td>
-        </tr>
-        <tr>
-          <td>15</td>
-          <td><b class="">Qwen2.5-Math-72B</b></td>
-          <td>LM-O</td>
-          <td><a href="https://huggingface.co/Qwen/Qwen2.5-Math-72B" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">57.4</b></td>
-          <td>55.3</td>
-          <td>54.9</td>
-          <td><b class="">55.1</b></td>
-          <td>55.5</td>
-          <td>71.6</td>
-          <td>58.1</td>
-          <td>59.1</td>
-          <td><b class="">61.1</b></td>
-          <td>47.4</td>
-          <td>53.8</td>
-          <td>100.0</td>
-          <td><b class="">67.1</b></td>
-        </tr>
-        <tr>
-          <td>16</td>
-          <td><b class="">RLHFlow-PRM-Mistral-8B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/RLHFlow/Llama3.1-8B-PRM-Mistral-Data" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">54.4</b></td>
-          <td>46.1</td>
-          <td>47.3</td>
-          <td><b class="">46.7</b></td>
-          <td>56.6</td>
-          <td>55.1</td>
-          <td>54.4</td>
-          <td>63.8</td>
-          <td><b class="">57.5</b></td>
-          <td>51.5</td>
-          <td>56.2</td>
-          <td>97.9</td>
-          <td><b class="">68.5</b></td>
-        </tr>
-        <tr>
-          <td>17</td>
-          <td><b class="">RLHFlow-PRM-Deepseek-8B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/RLHFlow/Llama3.1-8B-PRM-Deepseek-Data" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">54.2</b></td>
-          <td>46.4</td>
-          <td>48.9</td>
-          <td><b class="">47.6</b></td>
-          <td>55.7</td>
-          <td>55.0</td>
-          <td>53.2</td>
-          <td>66.2</td>
-          <td><b class="">57.5</b></td>
-          <td>49.0</td>
-          <td>55.4</td>
-          <td>99.8</td>
-          <td><b class="">68.1</b></td>
-        </tr>
-        <tr>
-          <td>18</td>
-          <td><b class="">MATHMinos-Mistral-7B</b></td>
-          <td>PRM</td>
-          <td><a href="https://github.com/KbsdJames/MATH-Minos" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">54.2</b></td>
-          <td>48.8</td>
-          <td>54.0</td>
-          <td><b class="">51.4</b></td>
-          <td>57.0</td>
-          <td>52.1</td>
-          <td>50.7</td>
-          <td>57.8</td>
-          <td><b class="">54.4</b></td>
-          <td>52.8</td>
-          <td>55.8</td>
-          <td>91.1</td>
-          <td><b class="">66.5</b></td>
-        </tr>
-        <tr>
-          <td>19</td>
-          <td><b class="">R1-Distill-Llama3.1-8B</b></td>
-          <td>LM-O</td>
-          <td><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">52.7</b></td>
-          <td>49.9</td>
-          <td>46.6</td>
-          <td><b class="">48.2</b></td>
-          <td>52.9</td>
-          <td>63.2</td>
-          <td>54.5</td>
-          <td>54.9</td>
-          <td><b class="">56.4</b></td>
-          <td>46.7</td>
-          <td>48.5</td>
-          <td>100.0</td>
-          <td><b class="">65.0</b></td>
-        </tr>
-        <tr>
-          <td>20</td>
-          <td><b class="">R1-Distill-Qwen-7B</b></td>
-          <td>LM-O</td>
-          <td><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">52.6</b></td>
-          <td>32.9</td>
-          <td>37.9</td>
-          <td><b class="">35.4</b></td>
-          <td>47.3</td>
-          <td>54.1</td>
-          <td>48.4</td>
-          <td>48.0</td>
-          <td><b class="">49.4</b></td>
-          <td>45.6</td>
-          <td>46.8</td>
-          <td>100.0</td>
-          <td><b class="">64.1</b></td>
-        </tr>
-        <tr>
-          <td>21</td>
-          <td><b class="">Llemma-PRM800k-7B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/ScalableMath/llemma-7b-prm-prm800k-level-1to3-hf" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">52.0</b></td>
-          <td>49.3</td>
-          <td>53.4</td>
-          <td><b class="">51.4</b></td>
-          <td>56.4</td>
-          <td>47.1</td>
-          <td>46.7</td>
-          <td>53.3</td>
-          <td><b class="">50.9</b></td>
-          <td>51.0</td>
-          <td>53.5</td>
-          <td>93.6</td>
-          <td><b class="">66.0</b></td>
-        </tr>
-        <tr>
-          <td>22</td>
-          <td><b class="">Llemma-MetaMath-7B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/ScalableMath/llemma-7b-prm-metamath-level-1to3-hf" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">50.5</b></td>
-          <td>50.2</td>
-          <td>50.5</td>
-          <td><b class="">50.3</b></td>
-          <td>51.9</td>
-          <td>47.6</td>
-          <td>44.4</td>
-          <td>52.1</td>
-          <td><b class="">49.0</b></td>
-          <td>50.5</td>
-          <td>51.3</td>
-          <td>96.0</td>
-          <td><b class="">66.0</b></td>
-        </tr>
-        <tr>
-          <td>23</td>
-          <td><b class="">Llemma-oprm-7B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/ScalableMath/llemma-7b-oprm-prm800k-level-1to3-hf" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">50.3</b></td>
-          <td>48.7</td>
-          <td>49.3</td>
-          <td><b class="">49.0</b></td>
-          <td>54.2</td>
-          <td>46.8</td>
-          <td>44.5</td>
-          <td>53.5</td>
-          <td><b class="">49.8</b></td>
-          <td>49.2</td>
-          <td>51.3</td>
-          <td>91.8</td>
-          <td><b class="">64.1</b></td>
-        </tr>
-        <tr>
-          <td>24</td>
-          <td><b class="">MetaMath-7B</b></td>
-          <td>LM-O</td>
-          <td><a href="https://huggingface.co/meta-math/MetaMath-7B-V1.0" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">49.7</b></td>
-          <td>48.9</td>
-          <td>46.9</td>
-          <td><b class="">47.9</b></td>
-          <td>47.3</td>
-          <td>48.9</td>
-          <td>48.4</td>
-          <td>48.8</td>
-          <td><b class="">48.3</b></td>
-          <td>46.5</td>
-          <td>48.3</td>
-          <td>98.0</td>
-          <td><b class="">64.2</b></td>
-        </tr>
-        <tr>
-          <td>25</td>
-          <td><b class="">MetaMath-13B</b></td>
-          <td>LM-O</td>
-          <td><a href="https://huggingface.co/meta-math/MetaMath-13B-V1.0" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">49.4</b></td>
-          <td>50.3</td>
-          <td>44.4</td>
-          <td><b class="">47.3</b></td>
-          <td>47.8</td>
-          <td>47.4</td>
-          <td>49.4</td>
-          <td>48.1</td>
-          <td><b class="">48.2</b></td>
-          <td>49.0</td>
-          <td>48.1</td>
-          <td>99.5</td>
-          <td><b class="">65.5</b></td>
-        </tr>
-        <tr>
-          <td>26</td>
-          <td><b class="">MathShepherd-Mistral-7B</b></td>
-          <td>PRM</td>
-          <td><a href="https://huggingface.co/peiyi9979/math-shepherd-mistral-7b-prm" class="ext-link" target="_blank">Link</a></td>
-          <td><b class="">47.0</b></td>
-          <td>44.0</td>
-          <td>50.3</td>
-          <td><b class="">47.1</b></td>
-          <td>49.4</td>
-          <td>44.5</td>
-          <td>41.3</td>
-          <td>47.7</td>
-          <td><b class="">45.7</b></td>
-          <td>47.2</td>
-          <td>48.6</td>
-          <td>86.1</td>
-          <td><b class="">60.7</b></td>
-        </tr>
-      </table>
-
-
-
-
-
-
-
-
-
-      <b>Model Classes:</b> <b>PRM:</b> Process-Level Reward Models, <b>LM-C:</b> Close-Source Large Language Models, <b>LM-O:</b> Open-Source Large Language Models.
-      <br>
-      <b>Task types:</b> <b>NR:</b> Non-Redundancy,
-      <b>NCL:</b> Non-Circular Logic,
-      <b>ES:</b> Empirically Soundness,
-      <b>SC:</b> Step Consistency,
-      <b>DC:</b> Domain Consistency.
-      <b>CI:</b> Confidence Invariance.
-      <b>PS:</b> Prerequisite Sensitivity.
-      <b>DR:</b> Deception Resistance.
-      <b>MS:</b> Multi-Solution Consistency.
-      <br>
-      <b>Evaluation Subjects:</b>
-      <b>S1:</b> Average PRMScore for Simplicity evaluation subjects, including NR. and NCL.<br>
-      <b>S2:</b> Average PRMScore for Soundness evaluation subjects, including ES., SC., DC., and CI.<br>
-      <b>S3:</b> Average PRMScore for Sensitivity evaluation subjects, including PS., DR., and MS. <br>
-      <br>
-    </div>
-
-  </div>
-  </div>
-
-  </div>
-</section>
+<!--  </div>-->
+<!--</section>-->
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{song2025prmbench,
-  title={PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models},
-  author={Mingyang Song and Zhaochen Su and Xiaoye Qu and Jiawei Zhou and Yu Cheng},
-  journal={arXiv preprint arXiv:2501.03124},
-  year={2025},
-  url={https://arxiv.org/pdf/2501.03124}
+    <pre><code>@article{song2025head,
+  title={From head to tail: Towards balanced representation in large vision-language models through adaptive data calibration},
+  author={Song, Mingyang and Qu, Xiaoye and Zhou, Jiawei and Cheng, Yu},
+  journal={arXiv preprint arXiv:2503.12821},
+  year={2025}
 }</code></pre>
   </div>
 </section>
-<div id="visitor-map" style="width: 300px; height: 300px; overflow: hidden; margin: 0 auto;">
-  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=uXX9ttEyvwWpg_VNSd3nV7rjj5YP5PAPRwBbVV8VIs8'></script>
-</div>
+
+
+    <section>
+      <div class="section" id="org-banners" style="display:flex">
+        <a href="https://www.fudan.edu.cn/" target="_blank" rel="external">
+          <img class="center-block org-banner" style="height:200px; object-fit:contain;" src="static/images/fdu.jpg">
+        </a>
+        <a href="https://www.shlab.org.cn/" target="blank" class="ext-link">
+          <img class="center-block org-banner" style="height:200px; object-fit:contain;" src="static/images/ailab.jpg">
+        </a>
+        <a href="https://www.stonybrook.edu/" target="_blank" rel="external">
+          <img class="center-block org-banner" style="height:200px; object-fit:contain;" src="static/images/stu.jpg">
+        </a>
+        <a href="https://www.cuhk.edu.hk/chinese/" target="_blank" rel="external">
+          <img class="center-block org-banner" style="height:200px; object-fit:contain;" src="static/images/cuhk.jpg">
+        </a>
+      </div>
+    </section>
+
+
 <footer class="footer">
   <div class="container">
+    <div id="visitor-map" style="width: 300px; height: 300px; overflow: hidden; margin: 0 auto;">
+      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=uXX9ttEyvwWpg_VNSd3nV7rjj5YP5PAPRwBbVV8VIs8'></script>
+    </div>
 
     <div class="columns is-centered">
       <div class="column is-8">
